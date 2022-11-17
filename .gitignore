@@ -1,7 +1,9 @@
+/.project
+/.pydevproject
+/__pycache__/
+/.settings/
 /source.png
 /source1.png
 /source2.png
-/.project
-/.pydevproject
 /spiral.gif
 /spiral.png
