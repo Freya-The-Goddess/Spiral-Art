@@ -1,5 +1,5 @@
 # Spiral Art Drawing Program
-# by Freya Corlis-Richards
+# by Freya-The-Goddess
 
 #USER DEFINED PARAMETERS
 #Modify these to change the output of the spiral drawer
@@ -43,21 +43,20 @@ class SPIRAL:
     MIN_LINE_PIXELS     = 0.5   #px width of thinnest line (white in source image)
 
 
-
 #CALCULATED PARAMETERS
 #Warning! modifying these variables may break the program
 class CALC:
     class IMAGE:
         IMAGE_SIZE =  (IMAGE.WIDTH, IMAGE.HEIGHT)
         CANVAS_SIZE = (int(IMAGE.WIDTH * IMAGE.SCALE), int(IMAGE.HEIGHT * IMAGE.SCALE))
-
+    
     class GIF:
         GIF_SIZE = (int(IMAGE.WIDTH * GIF.GIF_SCALE), int(IMAGE.HEIGHT * GIF.GIF_SCALE))
         FRAME_INCREMENT = (360 / SPIRAL.DEGREES) / GIF.FRAMES_PER_ROTATION  #loop cycles per gif frame
-      
+    
     class MONO_COLOR:
         SAMPLE_WIDTH = int(SPIRAL.SPACING / 2 * MONO_COLOR.SMOOTHING)       #width of pixel brightness sampling
-
+    
     class SPIRAL:
         INCREMENT = SPIRAL.SPACING / (360 / SPIRAL.DEGREES / IMAGE.SCALE)   #radius offset per increment
         if IMAGE.CIRCLE_CROPPING:

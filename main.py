@@ -1,5 +1,5 @@
 # Spiral Art Drawing Program
-# by Freya Corlis-Richards
+# by Freya-The-Goddess
 
 #import libraries
 from PIL import Image, ImageDraw #Pillow (PIL fork)
